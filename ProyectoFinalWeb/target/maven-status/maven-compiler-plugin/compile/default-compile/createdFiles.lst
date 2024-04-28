@@ -1,0 +1,6 @@
+controlador\Conexion.class
+controlador\Consultas.class
+com\mycompany\proyectofinalweb\JakartaRestConfiguration.class
+servlets\InicioSesion.class
+servlets\RegistrarUsuarios.class
+com\mycompany\proyectofinalweb\resources\JakartaEE10Resource.class
