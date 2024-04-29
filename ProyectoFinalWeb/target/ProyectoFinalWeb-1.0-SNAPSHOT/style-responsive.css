@@ -237,6 +237,7 @@ header.fixed .site-branding a.logo img {
 		}
 		.contactform form input[type="text"],
 		.contactform form input[type="email"],
+                .contactform form input[type="password"],
 		.contactform form textarea{
 			width:100%;
 		}
