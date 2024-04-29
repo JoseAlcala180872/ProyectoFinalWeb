@@ -1,8 +1,11 @@
-/**
- * 	Equipo Aplicaciones Web
- * 	Ene-May 2024
- * 	
- * */
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 28 abr. 2024, 20:50:44
+    Author     : michelle
+*/
 *{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -204,7 +207,7 @@ nav.headermenu ul{
 nav.headermenu ul li{
     float: left;
     text-align:left;
-    color:#000;
+    color:black;
     font-size:15px;
     font-weight: 400;
     margin-right: 30px;
@@ -216,7 +219,7 @@ nav.headermenu ul li:last-child{
     margin-right: 0;
 }
 nav.headermenu ul li a{
-    color: #fff;
+    color:black;
     text-decoration: none;
     padding: 8px 15px;
 }
@@ -324,7 +327,7 @@ header.fixed .contact-info a{
 }
 .bannercontent .text h2{
     color:#fff;
-    font-size:90px;
+    font-size:120px;
     line-height: 100%;
     font-family:'Poppins';
     font-weight: bold;
@@ -694,5 +697,33 @@ footer{
 }
 /* -- FOOTER ENDS -- */
 
+/* -- CARRITO STARTS-- */
+body{
+    margin-top:200px;
+    background: white;
+}
+.ui-w-40 {
+    width: 40px !important;
+    height: auto;
+}
 
+.card{
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.08);   
+    background: #a4ceac;
+    color:#000;
+    font-family:'Poppins';
+}
 
+.ui-product-color {
+    display: inline-block;
+    overflow: hidden;
+    margin: .144em;
+    width: .875rem;
+    height: .875rem;
+    border-radius: 10rem;
+    -webkit-box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.15) inset;
+    vertical-align: middle;
+    
+}
+/* -- CARRITO ENDS-- */
