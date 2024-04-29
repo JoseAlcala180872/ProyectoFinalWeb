@@ -71,7 +71,7 @@
 
                                         <nav class="headermenu leftmenu" id="headnav" role="navigation">
                                             <ul>
-                                                <li><a>Ordena y Recoge</a></li>
+                                                <li><a>Ordena y recoge</a></li>
                                             </ul>
                                         </nav>
 
@@ -108,7 +108,7 @@
                             <br clear="all" />
                             <input type="password" name="pass" placeholder="Contraseña*" required>
                             <br clear="all" />
-                            <input type="submit" value="Registrar usuario">
+                            <input type="submit" value="Registrarme">
                         </form>
                     
                 </div>
