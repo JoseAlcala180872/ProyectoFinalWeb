@@ -1,7 +1,7 @@
 <%-- 
     Document   : iniciarSesion
     Created on : 27 abr 2024, 2:14:38 p.m.
-    Author     : Yeisi
+
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -38,83 +38,84 @@
     </head>
     <body>
         <header>
-		<div class="container psr">
+            <div class="container psr">
 
-			<div class="header_default">
-
-
-				<div class="site-branding">
-					<a href="index.jsp" class="logo">
-						<img src="images/logoPalmera.PNG" alt="" class="logo-1">
-						<img src="images/logoPalmera.PNG" alt="" class="logo-2">
-					</a>
-				</div>
+                <div class="header_default">
 
 
-				<div class="header-right">
+                    <div class="site-branding">
+                        <a href="index.jsp" class="logo">
+                            <img src="images/logoPalmera.PNG" alt="" class="logo-1">
+                            <img src="images/logoPalmera.PNG" alt="" class="logo-2">
+                        </a>
+                    </div>
 
 
-					<div class="site-navwrap">
-						<div class="navicons">
-							<a href="javascript:void;" class="navshow">
-								<span class="lnr lnr-menu"></span>
-							</a>
-							<a href="javascript:void;" class="navhide">
-								<span class="lnr lnr-cross"></span>
-							</a>
-						</div>
-
-						<div class="sitenav" id="sitenav">
-							<div class="navwrap">
-								<div class="navouter">
+                    <div class="header-right">
 
 
-									<nav class="headermenu leftmenu" id="headnav" role="navigation">
-										<ul>
-                                                                                        <li><a>Ordena y Recoge</a></li>
-										</ul>
-									</nav>
+                        <div class="site-navwrap">
+                            <div class="navicons">
+                                <a href="javascript:void;" class="navshow">
+                                    <span class="lnr lnr-menu"></span>
+                                </a>
+                                <a href="javascript:void;" class="navhide">
+                                    <span class="lnr lnr-cross"></span>
+                                </a>
+                            </div>
 
-								</div>
-							</div>
-						</div>
-						<!--sitenav-->
-					</div>
-					<!--site-navwrap-->
-
-
-				</div>
+                            <div class="sitenav" id="sitenav">
+                                <div class="navwrap">
+                                    <div class="navouter">
 
 
+                                        <nav class="headermenu leftmenu" id="headnav" role="navigation">
+                                            <ul>
+                                                <li><a>Ordena y Recoge</a></li>
+                                            </ul>
+                                        </nav>
 
-			</div>
-			<!--header_default-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!--sitenav-->
+                        </div>
+                        <!--site-navwrap-->
 
-		</div>
-	</header>
-	<!-- HEADER -->
-        
+
+                    </div>
+
+
+
+                </div>
+                <!--header_default-->
+
+            </div>
+        </header>
+        <!-- HEADER -->
+
         <section class="contactsection" id="contact">
-		<div class="container">
+            <div class="container">
 
-			<h3>Iniciar sesión</h3>
+                <h3>Iniciar sesión</h3>
 
+                
+                <div class="contactform">
+                    
+                        <form id="iniciar" action="iniciar" method="post" onsubmit="return validateForm()">
+                            <input type="text" name="usuario" placeholder="Nombre de usuario*" required>
+                            <br clear="all" />
+                            <br clear="all" />
+                            <input type="password" name="pass" placeholder="Contraseña*" required>
+                            <br clear="all" />
+                            <input type="submit" value="Iniciar sesión">
+                        </form>
+                    
+                </div>
+                <h4>¿No tienes una cuenta?  <a href="registro.jsp">Registrar</a></h4>
 
-			<div class="contactform">
-				<form id="iniciar" action="iniciar" method="post" onsubmit="return validateForm()">
-					<input type="text" name="usuario" placeholder="Nombre de usuario*" required>
-                                        <br clear="all" />
-                                        <br clear="all" />
-					<input type="text" name="pass" placeholder="Contraseña*" required>
-                                        <br clear="all" />
-					<input type="submit" id="contactform_btn" value="Iniciar sesión">
-				</form>
-			</div>
-
-                        <h4>¿No tienes una cuenta?  <a href="registro.jsp">Registrar</a></h4>
-                        
-		</div>
-	</section>
+            </div>
+        </section>
 
         <script>
             function validateForm() {
@@ -151,25 +152,17 @@
             }
         </script>
 
-        <!-- comment <form action="iniciar" method="post">
-            <input type="text" name="usuario" placeholder="nombre de usuario"><br>
-            <input type="password" name="pass"><br>
-            <input type="submit" value="Iniciar sesión">
-        </form>
-        <br>
-        -->
-        
         <footer>
-		<div class="container">
+            <div class="container">
 
 
-			<div class="copyright">
-				Copyright &copy; <span id="copyrightyear"></span> Equipo Aplicaciones Web
-			</div>
+                <div class="copyright">
+                    Copyright &copy; <span id="copyrightyear"></span> Equipo Aplicaciones Web
+                </div>
 
-		</div>
-	</footer>
-	<!-- FOOTER -->
-        
+            </div>
+        </footer>
+        <!-- FOOTER -->
+
     </body>
 </html>

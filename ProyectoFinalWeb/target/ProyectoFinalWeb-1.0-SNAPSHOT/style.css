@@ -527,6 +527,7 @@
 		}
 		.contactform form input[type="text"],
 		.contactform form input[type="email"],
+		.contactform form input[type="password"],
 		.contactform form textarea{
 			float:left;
 			width:48%;
