@@ -20,7 +20,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
         <title> Cenadurí­a La Palmera </title>
-
         <link rel="icon" type="image/png" href="./images/logoPalmera.PNG">
 
 
@@ -78,8 +77,8 @@
 
                                         <nav class="headermenu leftmenu" id="headnav" role="navigation">
                                             <ul>
-                                                <li><a>Hola <%= usuario%></a></li>
                                                 <li><a href="menu.jsp">Regresar al menú</a></li>
+                                                <li><a>Hola <%= usuario%></a></li>
                                             </ul>
                                         </nav>
 
@@ -123,7 +122,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+
                                 <!-- ADAPTAR PARA QUE DESPLIEGUE LOS ARTICULOS DEL CARRITO-->
                                 <tr>
                                     <td class="p-4">
@@ -148,33 +147,59 @@
                     <div class="d-flex flex-wrap justify-content-between align-items-center pb-4">
                         <div class="mt-4">
                             <label class="text-muted font-weight-normal">Subtotal: </label><strong>$20</strong>                             
-                        <div class="d-flex">
-                            <div class="text-right mt-4 mr-5">
-                                <label class="text-muted font-weight-normal m-0">IVA:  </label><strong>$20</strong>                                
-                            <div class="text-right mt-4">
-                                <label class="text-muted font-weight-normal m-0">Total:  </label><strong>$1164.65</strong>
+                            <div class="d-flex">
+                                <div class="text-right mt-4 mr-5">
+                                    <label class="text-muted font-weight-normal m-0">IVA:  </label><strong>$20</strong>                                
+                                    <div class="text-right mt-4">
+                                        <label class="text-muted font-weight-normal m-0">Total:  </label><strong>$1164.65</strong>
+                                    </div>
+                                </div>
                             </div>
+
+                            <div class="float-right">
+                                <button type="button" class="btn btn-lg btn-primary mt-2" ><a href="modalCompra.jsp">Comprar</a></button>
+                                
+                            </div>                           
+
                         </div>
                     </div>
+                </div>
 
-                    <div class="float-right">
-                        <button type="button" class="btn btn-lg btn-primary mt-2">Comprar</button>
+                <script>
+                    // Ventana modal
+                    var modal = document.getElementById("ventanaModal");
+                    // Botón que abre el modal
+                    var boton = document.getElementById("abrirModal");
+                    // Hace referencia al elemento <span> que tiene la X que cierra la ventana
+                    var span = document.getElementsByClassName("cerrar")[0];
+
+                    boton.addEventListener("click", function () {
+                        modal.style.display = "block";
+                    });
+                    // Si el usuario hace clic en la x, la ventana se cierra
+                    span.addEventListener("click", function () {
+                        modal.style.display = "none";
+                    });
+                    // Si el  usuario hace clic fuera de la ventana, se cierra.
+                    window.addEventListener("click", function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    });
+                </script>
+
+                <footer>
+                    <div class="container">
+
+
+                        <div class="copyright">
+                            Copyright &copy; <span id="copyrightyear"></span> Equipo Aplicaciones Web
+                        </div>
+
                     </div>
-
-                </div>
-            </div>
-        </div>
-
-        <footer>
-            <div class="container">
+                </footer>
+                <!-- FOOTER -->
 
 
-                <div class="copyright">
-                    Copyright &copy; <span id="copyrightyear"></span> Equipo Aplicaciones Web
-                </div>
-
-            </div>
-        </footer>
-        <!-- FOOTER -->
-    </body>
-</html>
+                </body>
+                </html>

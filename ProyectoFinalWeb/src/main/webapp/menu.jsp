@@ -79,7 +79,6 @@
                                             <ul>
                                                 <li><a href="carritoCompras.jsp">Carrito</a></li>
                                                 <li><a>Hola <%= usuario%></a></li>
-                                                <li><a>Ordena y recoge</a></li>
                                             </ul>
                                         </nav>
 
